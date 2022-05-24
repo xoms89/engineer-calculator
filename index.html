@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>engineerCalculator</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="item input">
+          <form name="form">
+            <input type="text" name="textview" readonly />
+          </form>
+        </div>
+        <div class="item clean" onclick="clean()"><p>C</p></div>
+        <div class="item back" onclick="back()"><p>&larr;</p></div>
+        <div class="item" onclick="insert('+')"><p>+</p></div>
+        <div class="item" onclick="insert('-')"><p>-</p></div>
+        <div class="item" onclick="insert('*')"><p>&times;</p></div>
+        <div class="item" onclick="insert('/')"><p>&divide;</p></div>
+        <div class="item" onclick="insert('7')"><p>7</p></div>
+        <div class="item" onclick="insert('8')"><p>8</p></div>
+        <div class="item" onclick="insert('9')"><p>9</p></div>
+        <div class="item" onclick="insert('(')"><p>(</p></div>
+        <div class="item" onclick="insert('4')"><p>4</p></div>
+        <div class="item" onclick="insert('5')"><p>5</p></div>
+        <div class="item" onclick="insert('6')"><p>6</p></div>
+        <div class="item" onclick="insert(')')"><p>)</p></div>
+        <div class="item" onclick="insert('1')"><p>1</p></div>
+        <div class="item" onclick="insert('2')"><p>2</p></div>
+        <div class="item" onclick="insert('3')"><p>3</p></div>
+        <div class="item equal" onclick="equal()"><p>=</p></div>
+        <div class="item zero" onclick="insert('0')"><p>0</p></div>
+        <div class="item" onclick="insert('.')"><p>.</p></div>
+      </div>
+    </main>
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>
