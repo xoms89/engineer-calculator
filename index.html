@@ -10,27 +10,48 @@
   <body>
     <main>
       <div class="container">
-        <div class="item input"></div>
-        <div class="item clean" onclick="clean()"><p>C</p></div>
-        <div class="item back" onclick="back()"><p>&larr;</p></div>
-        <div class="item" onclick="insert('+')"><p>+</p></div>
-        <div class="item" onclick="insert('-')"><p>-</p></div>
-        <div class="item" onclick="insert('*')"><p>&times;</p></div>
-        <div class="item" onclick="insert('/')"><p>&divide;</p></div>
-        <div class="item" onclick="insert('7')"><p>7</p></div>
-        <div class="item" onclick="insert('8')"><p>8</p></div>
-        <div class="item" onclick="insert('9')"><p>9</p></div>
-        <div class="item" onclick="insert('(')"><p>(</p></div>
-        <div class="item" onclick="insert('4')"><p>4</p></div>
-        <div class="item" onclick="insert('5')"><p>5</p></div>
-        <div class="item" onclick="insert('6')"><p>6</p></div>
-        <div class="item" onclick="insert(')')"><p>)</p></div>
-        <div class="item" onclick="insert('1')"><p>1</p></div>
-        <div class="item" onclick="insert('2')"><p>2</p></div>
-        <div class="item" onclick="insert('3')"><p>3</p></div>
-        <div class="item equal" onclick="equal()"><p>=</p></div>
-        <div class="item zero" onclick="insert('0')"><p>0</p></div>
-        <div class="item" onclick="insert('.')"><p>.</p></div>
+        <div class="item input">0</div>
+        <div class="item" onclick="">deg</div>
+        <div class="item" onclick="">sin</div>
+        <div class="item" onclick="">cos</div>
+        <div class="item" onclick="">tan</div>
+        <div class="item" onclick="">ctg</div>
+
+        <div class="item" onclick="">x<sup class="upper">y</sup></div>
+        <div class="item" onclick="">lg</div>
+        <div class="item" onclick="">ln</div>
+        <div class="item" onclick="insert('(')">(</div>
+        <div class="item" onclick="insert(')')">)</div>
+
+        <div class="item" onclick="">x<sup class="upper">2</sup></div>
+        <div class="item clean" onclick="clean()">C</div>
+        <div class="item back" onclick="back()">&lArr;</div>
+        <div class="item percent" onclick="">%</div>
+        <div class="item divide" onclick="insert('/')">&divide;</div>
+
+        <div class="item" onclick="">x<sup class="upper">-1</sup></div>
+        <div class="item" onclick="insert('7')">7</div>
+        <div class="item" onclick="insert('8')">8</div>
+        <div class="item" onclick="insert('9')">9</div>
+        <div class="item mul" onclick="insert('*')">&times;</div>
+
+        <div class="item" onclick="">&radic;x</div>
+        <div class="item" onclick="insert('4')">4</div>
+        <div class="item" onclick="insert('5')">5</div>
+        <div class="item" onclick="insert('6')">6</div>
+        <div class="item sub" onclick="insert('-')">-</div>
+
+        <div class="item" onclick="">x!</div>
+        <div class="item" onclick="insert('1')">1</div>
+        <div class="item" onclick="insert('2')">2</div>
+        <div class="item" onclick="insert('3')">3</div>
+        <div class="item add" onclick="insert('+')">+</div>
+
+        <div class="item" onclick="">&prod;</div>
+        <div class="item" onclick="">e</div>
+        <div class="item zero" onclick="insert('0')">0</div>
+        <div class="item" onclick="insert('.')">,</div>
+        <div class="item equal" onclick="equal()">=</div>
       </div>
     </main>
     <script src="./js/calculator.js"></script>
