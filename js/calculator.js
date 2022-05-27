@@ -137,33 +137,41 @@ function trigonometry(name) {
 
   switch (name) {
     case 'sin':
-
-
-    // В радианах
-      //  input.textContent = Math.sin(eval(input.textContent)).toFixed(8);
+    if (document.querySelector('.type').textContent == "deg") {
       // В градусах
       input.textContent = parseFloat(Math.sin(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+    } else {
+      // В радианах
+      input.textContent = Math.sin(eval(input.textContent)).toFixed(8);
+    }
       break;
 
     case 'cos':
-      // В радианах
-      //  input.textContent = Math.cos(eval(input.textContent)).toFixed(8);
+      if (document.querySelector('.type').textContent == "deg") {
       // В градусах
       input.textContent = parseFloat(Math.cos(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+    } else {
+      // В радианах
+      input.textContent = Math.cos(eval(input.textContent)).toFixed(8);
+    }
       break;
 
      case 'tan':
-      // В радианах
-      //  input.textContent = Math.tan(eval(input.textContent)).toFixed(8);
+      if (document.querySelector('.type').textContent == "deg") {
       // В градусах
       input.textContent = parseFloat(Math.tan(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
-      break;
+    } else {
+      // В радианах
+      input.textContent = Math.tan(eval(input.textContent)).toFixed(8);
+    }
 
      case 'ctg':
-      // В радианах
-      //  input.textContent = 1/Math.tan(eval(input.textContent)).toFixed(8);
+      if (document.querySelector('.type').textContent == "deg") {
       // В градусах
       input.textContent = parseFloat(1/Math.tan(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
-      break;
+    } else {
+      // В радианах
+      input.textContent = 1/Math.tan(eval(input.textContent)).toFixed(8);
+    }
   }
 }
