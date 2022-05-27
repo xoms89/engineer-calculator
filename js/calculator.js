@@ -112,13 +112,58 @@ function log(name) {
 
   switch (name) {
     case 'lg':
-      input.textContent = Math.log10(eval(input.textContent));
+      input.textContent = Math.log10(eval(input.textContent)).toFixed(8);
       break;
 
     case 'ln':
-      input.textContent = Math.log(eval(input.textContent));
+      input.textContent = Math.log(eval(input.textContent)).toFixed(8);
       break;
   }
 }
 
+// Переключение с градусов на радианы
+document.querySelector('.type').addEventListener('click', function() {
+    if (document.querySelector('.type').textContent == "deg") {
+        this.textContent = "rad";
+        console.log('Градусы')
+    } else if (document.querySelector('.type').textContent == "rad") {
+        this.textContent = "deg";
+        console.log('Радианы')
+    }
+})
 
+// Тригонометрические функуции
+function trigonometry(name) {
+
+  switch (name) {
+    case 'sin':
+
+
+    // В радианах
+      //  input.textContent = Math.sin(eval(input.textContent)).toFixed(8);
+      // В градусах
+      input.textContent = parseFloat(Math.sin(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+      break;
+
+    case 'cos':
+      // В радианах
+      //  input.textContent = Math.cos(eval(input.textContent)).toFixed(8);
+      // В градусах
+      input.textContent = parseFloat(Math.cos(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+      break;
+
+     case 'tan':
+      // В радианах
+      //  input.textContent = Math.tan(eval(input.textContent)).toFixed(8);
+      // В градусах
+      input.textContent = parseFloat(Math.tan(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+      break;
+
+     case 'ctg':
+      // В радианах
+      //  input.textContent = 1/Math.tan(eval(input.textContent)).toFixed(8);
+      // В градусах
+      input.textContent = parseFloat(1/Math.tan(eval(input.textContent) / 180 * Math.PI).toFixed(8).toString());
+      break;
+  }
+}
